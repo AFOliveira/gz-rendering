@@ -32,7 +32,7 @@ set_property(
 )
 
 target_compile_definitions(${ogre2_target}
-  PRIVATE OGRE_IGNORE_UNKNOWN_DEBUG)
+  PRIVATE OGRE_IGNORE_UNKNOWN_DEBUG OGRE_DEBUG_MODE=3)
 
 # Add OGRE2_LIBRARY_DIRS to INSTALL_RPATH
 # Append to a copy of CMAKE_INSTALL_RPATH since that is the default

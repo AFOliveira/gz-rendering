@@ -21,7 +21,7 @@ elseif (MSVC)
   set_source_files_properties(${TERRA_SOURCES} COMPILE_FLAGS "/wd4244")
 endif()
 
-add_definitions(-DOGRE_IGNORE_UNKNOWN_DEBUG)
+add_definitions(-DOGRE_IGNORE_UNKNOWN_DEBUG -DOGRE_DEBUG_MODE=3)
 
 #target_compile_definitions(${PROJECT_NAME} PUBLIC
 #  $<$<CONFIG:Debug>:DEBUG=1 _DEBUG=1>)
